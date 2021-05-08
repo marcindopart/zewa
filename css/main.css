@@ -14,6 +14,16 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: 'Century',
+  src: url('/fonts/Century.otf');
+}
+
+.century {
+  font-family: 'Century';
+  font-weight: 700;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -422,6 +432,99 @@ button:focus {
   background-color: #fff;
 }
 
+
+
+@media only screen and (min-width: 768px) {
+
+  .phone-mobile {
+    display: none;
+  }
+  
+  .navbar {
+    background-color: #2a3d77 !important;
+    height: 80px;
+  }
+  .navbar .nav-link {
+    color: #fff;
+  }
+  
+  .navbar .nav-link.active {
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .navbar .nav-link.active, .navbar .nav-link:hover {
+    color: #fff !important;
+    font-weight: 700;
+  }
+  
+  .navbar .nav-link.active::before,
+  .navbar .nav-link:hover::before {
+    background: #fff !important;
+  }
+  
+  
+  /* .navbar .navbar-nav .active {
+    color: #2a3d77 !important;
+    font-weight: 700;
+  } */
+  
+  .navbar .navbar-nav .active::before {
+    background:  #fff !important;
+  }
+  
+  /* .navbar .navbar-nav .nav-link:hover {
+    color: #2a3d77 !important;
+  } */
+}
+  
+.navbar-collapse {
+  background: #2a3d77 !important;
+}
+
+.nav-item.phone, .nav-item.phone .nav-link:hover {
+  color: #fff !important;
+  /* margin-left: 40px; */
+  font-weight: 700;
+}
+
+.nav-item.phone .nav-link::before {
+  display: none !important;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .phone-mobile {
+    color: #fff;
+    font-weight: 700;
+  }
+  .navbar-toggler {
+    background: #2a3d77 !important;
+  }
+  .navbar {
+    background-color: #2a3d77 !important;
+    height: 50px;
+  }
+  .navbar-expand-md .navbar-nav .nav-link.active {
+    background: #999 !important;
+  }
+  .nav-link {
+    margin-left: 0 !important;
+    padding-left: 30px !important;
+  }
+  .navbar-collapse .nav-link:hover, .nav-link.active {
+    color: #fff !important;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .navbar {
+    height: 64px;
+  }
+}
+
+
 .mainmenu-area {
   padding: 10px 0;
   border: none;
@@ -446,14 +549,14 @@ button:focus {
   color: #fff;
 }
 
-.menu-bg {
+/* .menu-bg {
   background-color: #fff !important;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   z-index: 999;
   padding: 3px;
-}
+} */
 
-.menu-bg .menu-button {
+/* .menu-bg .menu-button {
   top: 0;
 }
 
@@ -476,7 +579,7 @@ button:focus {
 
 .menu-bg .navbar-nav .active {
   color: #F97794 !important;
-}
+} */
 
 .menu-button:hover {
   cursor: pointer;
@@ -1340,6 +1443,7 @@ button:focus {
    Featured Section Start
    ========================================================================== */
 .featured-box {
+  display: flex;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -1359,7 +1463,6 @@ button:focus {
 }
 
 .featured-box .featured-content {
-  padding-left: 40px;
   position: relative;
 }
 
@@ -1371,7 +1474,7 @@ button:focus {
   text-transform: capitalize;
   position: absolute;
   top: 0px;
-  left: 50px;
+  left: 0;
   width: 100%;
 }
 
@@ -1662,9 +1765,9 @@ button:focus {
 }
 
 #carousel-area .carousel-item .carousel-caption {
-  top: 32%;
-  right: 10%;
-  left: 12%;
+  top: 40%;
+  right: 0%;
+  left: 59%;
   text-shadow: none;
   padding-top: 0;
   padding-bottom: 0;
@@ -1678,14 +1781,14 @@ button:focus {
 }
 
 #carousel-area .carousel-item .carousel-caption h2 {
-  font-size: 80px;
+  font-size: 100px;
   font-weight: 700;
   color: #fff;
 }
 
 #carousel-area .carousel-item .carousel-caption h4 {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 32px;
   font-weight: 500;
   margin-bottom: 30px;
 }

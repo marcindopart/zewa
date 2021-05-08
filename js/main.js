@@ -74,7 +74,7 @@
    ========================================================================== */
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 200) {
-            $('.header-top-area').addClass('menu-bg');
+            // $('.header-top-area').addClass('menu-bg');
         } else {
             $('.header-top-area').removeClass('menu-bg');
         }
