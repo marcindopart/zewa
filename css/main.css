@@ -14,6 +14,10 @@ body {
   overflow-x: hidden;
 }
 
+.header-bg {
+  background: rgba(0,0,0,0.5);
+}
+
 @font-face {
   font-family: 'Century',
   src: url('/fonts/Century.otf');
