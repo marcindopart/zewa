@@ -14,6 +14,10 @@ body {
   overflow-x: hidden;
 }
 
+.carousel-item.active img {
+  filter: blur(3px) sepia(0.3);
+}
+
 .header-bg {
   background: rgba(0,0,0,0.5);
 }
