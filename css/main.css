@@ -14,12 +14,8 @@ body {
   overflow-x: hidden;
 }
 
-.carousel-item.active img {
-  filter: blur(3px) sepia(0.3);
-}
-
 .header-bg {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.65);
 }
 
 @font-face {
@@ -523,6 +519,11 @@ button:focus {
   .navbar-collapse .nav-link:hover, .nav-link.active {
     color: #fff !important;
     font-weight: 700;
+  }
+
+  .carousel-caption h2,
+  .carousel-caption h4 {
+    padding: 0 !important;
   }
 }
 
@@ -1773,9 +1774,9 @@ button:focus {
 }
 
 #carousel-area .carousel-item .carousel-caption {
-  top: 40%;
+  top: 47%;
   right: 0%;
-  left: 59%;
+  left: 52%;
   text-shadow: none;
   padding-top: 0;
   padding-bottom: 0;
@@ -1792,6 +1793,7 @@ button:focus {
   font-size: 100px;
   font-weight: 700;
   color: #fff;
+  padding: 20px;
 }
 
 #carousel-area .carousel-item .carousel-caption h4 {
@@ -1799,6 +1801,7 @@ button:focus {
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 30px;
+  padding: 20px;
 }
 
 #carousel-area .carousel-control {
